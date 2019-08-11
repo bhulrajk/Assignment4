@@ -1,0 +1,33 @@
+
+<body>
+    <mat-tab-group mat-stretch-tabs 
+                    class="example-stretched-tabs mat-elevation-z4">
+    
+      <mat-tab label="dog">
+        <h3>List of Breakfast Items:</h3>
+        <table>
+          <tr> <th>Name</th> <th>Color</th> <th>Category</th> </tr>
+          <tr *ngFor="dog">
+            <td> {{d.name}} </td>
+            <td> {{d.color}} </td>
+            <td> {{d.category}} </td>
+          </tr>
+        </table>
+      </mat-tab>
+      
+      <mat-tab label="cat">
+        <h3>Dog</h3>
+    
+        <table>
+            <tr> <th>Name</th> <th>Color</th> <th>Category</th> </tr>
+          <tr *ngFor="cat">
+            <td>{{d2.name}}</td> 
+            <td>{{d2.color}}</td>
+            <td>{{d2.category}}</td>
+          </tr>
+        </table>
+      </mat-tab>
+    
+     
+    </mat-tab-group>
+    </body>
